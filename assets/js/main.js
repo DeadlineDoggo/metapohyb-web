@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (nav) {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 40) {
-        nav.classList.add('bg-[#0A3B2E]/95', 'backdrop-blur-lg', 'shadow-lg');
+        nav.classList.add('bg-[#1e252e]/95', 'backdrop-blur-lg', 'shadow-lg');
         nav.classList.remove('bg-transparent');
       } else {
-        nav.classList.remove('bg-[#0A3B2E]/95', 'backdrop-blur-lg', 'shadow-lg');
+        nav.classList.remove('bg-[#1e252e]/95', 'backdrop-blur-lg', 'shadow-lg');
         nav.classList.add('bg-transparent');
       }
     });

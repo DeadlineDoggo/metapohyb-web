@@ -67,11 +67,11 @@
 
 /* Glow effect for CTAs */
 .glow-green {
-  box-shadow: 0 0 20px rgba(0, 224, 122, 0.3), 0 0 60px rgba(0, 224, 122, 0.1);
+  box-shadow: 0 0 20px rgba(45, 210, 235, 0.3), 0 0 60px rgba(45, 210, 235, 0.1);
 }
 
 .glow-green:hover {
-  box-shadow: 0 0 30px rgba(0, 224, 122, 0.5), 0 0 80px rgba(0, 224, 122, 0.2);
+  box-shadow: 0 0 30px rgba(45, 210, 235, 0.5), 0 0 80px rgba(45, 210, 235, 0.2);
 }
 
 /* Glass morphism cards */
@@ -88,16 +88,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A3B2E;
+  background: #1e252e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00E07A33;
+  background: #2dd2eb33;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00E07A66;
+  background: #2dd2eb66;
 }
 
 /* Smooth scroll */
