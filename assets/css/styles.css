@@ -1,0 +1,106 @@
+/* MetaPohyb Website – Custom styles beyond Tailwind */
+
+/* Smooth gradient animation for hero backgrounds */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Floating animation for feature cards */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 4s ease-in-out 1s infinite;
+}
+
+.animate-float-delayed-2 {
+  animation: float 4s ease-in-out 2s infinite;
+}
+
+/* Pulse ring for success check */
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 0.4; }
+  100% { transform: scale(0.9); opacity: 0.8; }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.5s ease-in-out infinite;
+}
+
+/* Slide-in from bottom */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.7s ease-out forwards;
+}
+
+.animate-slide-up-delayed {
+  opacity: 0;
+  animation: slide-up 0.7s ease-out 0.2s forwards;
+}
+
+.animate-slide-up-delayed-2 {
+  opacity: 0;
+  animation: slide-up 0.7s ease-out 0.4s forwards;
+}
+
+.animate-slide-up-delayed-3 {
+  opacity: 0;
+  animation: slide-up 0.7s ease-out 0.6s forwards;
+}
+
+/* Glow effect for CTAs */
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 224, 122, 0.3), 0 0 60px rgba(0, 224, 122, 0.1);
+}
+
+.glow-green:hover {
+  box-shadow: 0 0 30px rgba(0, 224, 122, 0.5), 0 0 80px rgba(0, 224, 122, 0.2);
+}
+
+/* Glass morphism cards */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A3B2E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00E07A33;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00E07A66;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}

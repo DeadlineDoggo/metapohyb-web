@@ -1,0 +1,16 @@
+title: MetaPohyb
+description: Smart physiotherapy & exercise tracking application
+baseurl: ""
+url: ""
+
+theme: null
+
+exclude:
+  - README.md
+  - LICENSE
+  - "*.md"
+
+include:
+  - _config.yml
+
+plugins: []

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 – MetaPohyb</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mp: {
+              green:   '#00E07A',
+              dark:    '#0A3B2E',
+              deeper:  '#071F18',
+              accent:  '#00C86F',
+              purple:  '#7C3AED',
+            },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg" />
+  <style>
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-mp-deeper text-white font-sans antialiased">
+  <div class="min-h-screen flex flex-col items-center justify-center px-6 relative overflow-hidden">
+
+    <!-- Background blobs -->
+    <div class="absolute top-20 -left-32 w-96 h-96 rounded-full bg-mp-green/5 blur-3xl"></div>
+    <div class="absolute bottom-20 -right-32 w-96 h-96 rounded-full bg-mp-purple/5 blur-3xl"></div>
+
+    <div class="relative z-10 text-center max-w-md">
+      <!-- Big 404 -->
+      <div class="animate-float mb-8">
+        <span class="text-[8rem] sm:text-[10rem] font-extrabold leading-none bg-gradient-to-b from-mp-green to-mp-green/20 bg-clip-text text-transparent select-none">
+          404
+        </span>
+      </div>
+
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3">Page Not Found</h1>
+      <p class="text-white/50 mb-10 leading-relaxed">
+        The page you're looking for doesn't exist or has been moved. Let's get you back on track.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="../index.html" class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-mp-green text-mp-dark font-bold hover:bg-mp-accent transition-all shadow-lg shadow-mp-green/20">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          Go Home
+        </a>
+        <button onclick="history.back()" class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-white/20 text-white/70 font-semibold hover:border-mp-green/50 hover:text-mp-green transition-all">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          Go Back
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <p class="absolute bottom-6 text-white/15 text-xs">&copy; 2025 MetaPohyb</p>
+  </div>
+</body>
+</html>
