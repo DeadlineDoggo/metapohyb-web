@@ -57,10 +57,21 @@
 
       <!-- Right side: lang switcher + CTA -->
       <div class="hidden md:flex items-center gap-4">
-        <!-- Language switcher -->
-        <div class="flex items-center gap-0.5 border border-white/10 rounded-full p-0.5 text-xs font-semibold">
-          <a href="/en/" class="lang-btn px-3 py-1 rounded-full transition-colors" data-lang="en">EN</a>
-          <a href="/sk/" class="lang-btn px-3 py-1 rounded-full transition-colors" data-lang="sk">SK</a>
+        <!-- Language dropdown -->
+        <div class="relative" id="lang-dropdown">
+          <button id="lang-toggle" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-white/15 bg-mp-surface/30 text-xs font-semibold hover:border-mp-green/40 transition-colors">
+            <span id="lang-flag-btn" class="text-sm leading-none">&#x1F1F8;&#x1F1F0;</span>
+            <span id="lang-code-btn">SK</span>
+            <svg id="lang-chevron" class="w-3 h-3 text-white/40 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="lang-menu" class="absolute right-0 top-full mt-1.5 bg-mp-card border border-white/10 rounded-xl shadow-xl overflow-hidden z-50 min-w-[150px] hidden">
+            <a href="/en/" class="lang-option flex items-center gap-2.5 px-3.5 py-2.5 text-xs font-semibold hover:bg-white/5 transition-colors" data-lang="en">
+              <span class="text-sm leading-none">&#x1F1EC;&#x1F1E7;</span><span>EN &ndash; English</span>
+            </a>
+            <a href="/sk/" class="lang-option flex items-center gap-2.5 px-3.5 py-2.5 text-xs font-semibold hover:bg-white/5 transition-colors" data-lang="sk">
+              <span class="text-sm leading-none">&#x1F1F8;&#x1F1F0;</span><span>SK &ndash; Sloven&#x010D;ina</span>
+            </a>
+          </div>
         </div>
         <!-- CTA -->
         <a href="#download" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-mp-green text-mp-dark font-semibold text-sm hover:bg-mp-accent transition-colors glow-green" data-i18n="nav_cta">
@@ -84,8 +95,12 @@
       <!-- Mobile language switcher -->
       <div class="flex items-center gap-2 pt-1">
         <span class="text-white/40 text-xs">Language:</span>
-        <a href="/en/" class="lang-btn px-3 py-1 rounded-full border border-white/10 text-xs font-semibold transition-colors" data-lang="en">EN</a>
-        <a href="/sk/" class="lang-btn px-3 py-1 rounded-full border border-white/10 text-xs font-semibold transition-colors" data-lang="sk">SK</a>
+        <a href="/en/" class="lang-option flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-white/10 text-xs font-semibold hover:border-mp-green/40 transition-colors" data-lang="en">
+          <span class="text-sm leading-none">&#x1F1EC;&#x1F1E7;</span> EN
+        </a>
+        <a href="/sk/" class="lang-option flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-white/10 text-xs font-semibold hover:border-mp-green/40 transition-colors" data-lang="sk">
+          <span class="text-sm leading-none">&#x1F1F8;&#x1F1F0;</span> SK
+        </a>
       </div>
       <a href="#download" class="inline-block mt-2 px-5 py-2.5 rounded-full bg-mp-green text-mp-dark font-semibold text-sm" data-i18n="nav_cta">Get Started</a>
     </div>
